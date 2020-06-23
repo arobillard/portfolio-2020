@@ -1,6 +1,7 @@
 # Adam Robillard
 
-**Coming soon!**
+**New portfolio website coming soon!**
+
 The current version of my portfolio can be found at [adamrobillard.ca](https://adamrobillard.ca)
 
 - **[hello@adamrobillard.ca](mailto:hello@adamrobillard.ca)**
