@@ -1,0 +1,4 @@
+permalinks: pretty
+port: 2020
+sass:
+  style: expanded
