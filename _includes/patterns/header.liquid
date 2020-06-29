@@ -1,0 +1,10 @@
+<header class="masthead" id="header" role="banner">
+  <div class="wrapper">
+    {% if page.url == '/' %}
+      <h1 class="logo">Adam Robillard</h1>
+    {% else %}
+      <strong class="logo">Adam Robillard</strong>
+    {% endif %}
+    {% include utilities/nav.liquid %}
+  </div>
+</header>

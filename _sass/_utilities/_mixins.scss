@@ -1,0 +1,5 @@
+@mixin hov() {
+  &:hover, &:focus {
+    @content;
+  }
+}

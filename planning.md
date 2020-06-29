@@ -5,9 +5,9 @@ title: Planning
 ## Work
 
 ### Case Studies
-- [ ] Andrew Robillard 📹
-- [ ] Spruce Creative 🕸️
-- [ ] AMCES 👩‍💼
+- [ ] [Spruce Creative 🕸️](https://sprucecreative.ca)
+- [ ] [Andrew Robillard 📹](https://andrewrobillard.ca)
+- [ ] [AMCES 👩‍💼](https://amces.com)
 
 ### Personal Projects
 - [ ] [Sushi Go](https://ar-sushi-go.netlify.app) 🎴
@@ -31,6 +31,12 @@ title: Planning
 - [ ] [Vimeo](https://vimeo.com/user71391239)
 - [ ] Resume?
 
+## Structure
+
+### Case Studies
+- Introduction (Banner)
+- 
+
 ---
 
 [^1]: Not really sure what to do with this or where to put it but would like to include somehow, possibly with extra content
@@ -38,3 +44,4 @@ title: Planning
 [^2]: A potential replacement for uploading a PDF resumer
 
 [^3]: Would be nice to highlight both accomplishments and PD certificates
+

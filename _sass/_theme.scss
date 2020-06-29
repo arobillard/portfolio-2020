@@ -1,0 +1,62 @@
+:root {
+  --color-grape-dark: #19121F;
+  --color-grape: #22142E;
+  --color-grape-75: #594F62;
+  --color-grape-50: #908996;
+  --color-grape-25: #C8C4CB;
+  --color-grape-5: #F4F3F5;
+  --color-sea-dark: #0A2B28;
+  --color-sea: #0C3F3F;
+  --color-sea-75: #496F6F;
+  --color-sea-50: #859F9F;
+  --color-sea-25: #C2CFCF;
+  --color-sea-5: #F3F5F5;
+  --color-leaf-dark: #2F4D3F;
+  --color-leaf: #4A745F;
+  --color-leaf-75: #779787;
+  --color-leaf-50: #A4B9AF;
+  --color-leaf-25: #D2DCD7;
+  --color-leaf-5: #F6F8F7;
+  --color-sun-dark: #AF854C;
+  --color-sun: #F1C169;
+  --color-sun-75: #F4D08E;
+  --color-sun-50: #F8E0B4;
+  --color-sun-25: #FBEFD9;
+  --color-sun-5: #FEFCF7;
+  --color-peach-dark: #AB6049;
+  --color-peach: #EA916B;
+  --color-peach-75: #EFAC90;
+  --color-peach-50: #F4C8B5;
+  --color-peach-25: #FAE3DA;
+  --color-peach-5: #FEF9F8;
+
+  --font-primary: Prompt, Montserrat, 'Open Sans', sans-serif;
+  --font-secondary: Mitr, Montserrat, 'Open Sans', sans-serif;
+
+  --transition: .2s;
+}
+
+html {
+  background-color: $color-grape-dark;
+  color: $color-sun-50;
+  font-family: $font-primary;
+}
+
+h1, h2, h3, h4, .font-secondary {
+  font-family: $font-secondary;
+}
+
+a {
+  color: $color-peach;
+  text-decoration-color: $color-sun;
+  transition:
+    opacity $transition,
+    border-color $transition,
+    text-decoration-color $transition,
+    background-color $transition,
+    color $transition;
+    @include hov() {
+      color: $color-sun;
+      text-decoration-color: $color-peach;
+    }
+}

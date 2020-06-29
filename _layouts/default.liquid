@@ -9,7 +9,13 @@
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+
+  {% include patterns/header.liquid %}
+
   {{ content }}
+  
+  {% include patterns/footer.liquid %}
+
   <script src="js/main.js"></script>
 </body>
 </html>
