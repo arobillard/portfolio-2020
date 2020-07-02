@@ -1,6 +1,24 @@
 ---
 layout: default
 ---
-<div class="wrapper">
-  <h1>What up</h1>
-</div>
+{% include patterns/hero-home.liquid %}
+
+<section class="case-study-previews section-slide-inactive" id="case-studies">
+  <div class="wrapper">
+    {% for preview in site.case-studies %}
+      <div id="{{ preview.slug }}" class="case-study-slide grid-flex">
+        <div class="case-study-graphic [ xs-0 m-1-3 l-1-2 ]">
+          {% if preview.slug == 'spruce-creative' %}
+            {% include graphics/spruce-creative.liquid %}
+          {% endif %}
+        </div>
+        <div class="[ xs-0 m-1-3 l-1-2 ]">
+          <span class="text-peach">Case Study</span>
+          <h2 class="text-sun push-2">{{ preview.title }}</h2>
+          <p class="push-2">{{ preview.desc }}</p>
+          <a href="{{site.baseurl}}{{ preview.url }}">View case study</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

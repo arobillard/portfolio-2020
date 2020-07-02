@@ -1,0 +1,13 @@
+.case-study-previews {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .case-study-graphic svg {
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+    display: block;
+  }
+
+}

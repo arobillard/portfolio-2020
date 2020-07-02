@@ -1,3 +1,5 @@
+/* - - - - - - - - - - Variables - - - - - - - - - - */
+
 :root {
   --color-grape-dark: #19121F;
   --color-grape: #22142E;
@@ -32,18 +34,57 @@
 
   --font-primary: Prompt, Montserrat, 'Open Sans', sans-serif;
   --font-secondary: Mitr, Montserrat, 'Open Sans', sans-serif;
+  --type-scale: 1.3333;
+  --type-responsive-type-growth: 1;
+  --line-height: 1.3;
 
   --transition: .2s;
+  --animation-speed: 1s;
 }
+
+@media only screen and (min-width: 38em) {
+
+ :root {
+  --type-responsive-type-growth: 1.1;
+ } 
+
+}
+
+@media only screen and (min-width: 60em) {
+
+ :root {
+  --type-responsive-type-growth: 1.2;
+  --line-height: 1.4;
+ } 
+
+}
+
+@media only screen and (min-width: 90em) {
+
+ :root {
+  --type-responsive-type-growth: 1.3;
+  --line-height: 1.5;
+ } 
+
+}
+
+/* - - - - - - - - - - Type Scale - - - - - - - - - - */
 
 html {
   background-color: $color-grape-dark;
   color: $color-sun-50;
   font-family: $font-primary;
+  line-height: var(--line-height);
+  background-image: url('../images/bg-texture.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1, h2, h3, h4, .font-secondary {
   font-family: $font-secondary;
+  font-weight: 600;
 }
 
 a {
@@ -59,4 +100,84 @@ a {
       color: $color-sun;
       text-decoration-color: $color-peach;
     }
+}
+
+.headline-1,
+h1 {
+  @include typeScaleH1();
+}
+
+.headline-2,
+h2 {
+  @include typeScaleH2();
+}
+
+.headline-3,
+h3 {
+  @include typeScaleH3();
+}
+
+.headline-4,
+h4 {
+  @include typeScaleH4();
+}
+
+.headline-5,
+h5 {
+  @include typeScaleH5();
+}
+
+h6,
+body {
+  @include typeScaleBody();
+}
+
+/* - - - - - - - - - - Color Classes - - - - - - - - - - */
+
+$color-list: (
+  grape-dark: var(--color-grape-dark),
+  grape: var(--color-grape),
+  grape-75: var(--color-grape-75),
+  grape-50: var(--color-grape-50),
+  grape-25: var(--color-grape-25),
+  grape-5: var(--color-grape-5),
+  sea-dark: var(--color-sea-dark),
+  sea: var(--color-sea),
+  sea-75: var(--color-sea-75),
+  sea-50: var(--color-sea-50),
+  sea-25: var(--color-sea-25),
+  sea-5: var(--color-sea-5),
+  leaf-dark: var(--color-leaf-dark),
+  leaf: var(--color-leaf),
+  leaf-75: var(--color-leaf-75),
+  leaf-50: var(--color-leaf-50),
+  leaf-25: var(--color-leaf-25),
+  leaf-5: var(--color-leaf-5),
+  sun-dark: var(--color-sun-dark),
+  sun: var(--color-sun),
+  sun-75: var(--color-sun-75),
+  sun-50: var(--color-sun-50),
+  sun-25: var(--color-sun-25),
+  sun-5: var(--color-sun-5),
+  peach-dark: var(--color-peach-dark),
+  peach: var(--color-peach),
+  peach-75: var(--color-peach-75),
+  peach-50: var(--color-peach-50),
+  peach-25: var(--color-peach-25),
+  peach-5: var(--color-peach-5)
+);
+
+$target-list: (
+  text: color,
+  bg: background-color
+);
+
+@each $cName, $cValue in $color-list {
+  @each $tName, $tValue in $target-list {
+
+    .#{$tName}-#{$cName} {
+      #{$tValue}: $cValue;
+    }
+
+  }
 }

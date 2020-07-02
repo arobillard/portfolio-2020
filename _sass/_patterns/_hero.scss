@@ -1,0 +1,18 @@
+.hero {
+
+  &.hero-home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+        
+    h2 {
+      line-height: 1.2;
+    }
+    
+    p {
+      max-width: 48rem;
+    }
+
+  }
+
+}

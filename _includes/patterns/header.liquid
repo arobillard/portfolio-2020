@@ -1,12 +1,14 @@
 <header class="masthead" id="header" role="banner">
-  <div class="wrapper">
+  <div class="wrapper grid-flex-bottom gutter">
     <a href="{{site.baseurl}}/">
       {% if page.url == '/' %}
-        <h1 class="logo">Adam Robillard</h1>
+        <h1 class="logo">
+          <span class="break-xs">Adam</span>
+          Robillard</h1>
       {% else %}
         <strong class="logo">Adam Robillard</strong>
       {% endif %}
-      {% include utilities/nav.liquid %}
-      </a>
+      {% include utilities/nav.liquid class="nav push-l-auto pad-t-2" %}
+    </a>
   </div>
 </header>

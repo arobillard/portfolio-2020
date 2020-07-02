@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-2020",
+  "version": "1.0.0",
+  "description": "Potfolio website for Adam Robillard",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arobillard/portfolio-2020.git"
+  },
+  "keywords": [
+    "portfolio",
+    "graphic",
+    "design",
+    "web",
+    "design",
+    "web",
+    "development"
+  ],
+  "author": "Adam Robillard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arobillard/portfolio-2020/issues"
+  },
+  "homepage": "https://github.com/arobillard/portfolio-2020#readme",
+  "dependencies": {
+    "gsap": "^3.3.4"
+  }
+}

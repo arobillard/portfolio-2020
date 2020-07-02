@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en-ca">
+
 <head>
   <meta charset="utf-8">
   <title>Adam Robillard</title>
   <meta name="handheldfriendly" content="true">
   <meta name="mobileoptimized" content="240">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500&family=Prompt:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
   {% include patterns/header.liquid %}
 
   {{ content }}
-  
+
   {% include patterns/footer.liquid %}
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" type="module"></script>
 </body>
+
 </html>

@@ -1,0 +1,39 @@
+.masthead {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+  .wrapper {
+
+    a {
+      text-decoration: none;
+      color: var(--color-sun);
+      @include hov() {
+        color: var(--color-peach);
+      }
+    }
+
+    .logo {
+      @include typeScaleH5();
+      line-height: 1.1;
+      margin: 0;
+    }
+  
+    .nav {
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+      }
+      
+      li:not(:last-child) {
+        margin-right: calc(2rem * var(--line-height));
+      }
+
+    }
+
+  }
+
+}

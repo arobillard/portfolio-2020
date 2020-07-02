@@ -2,3 +2,7 @@ permalinks: pretty
 port: 2020
 sass:
   style: expanded
+collections:
+  case-studies:
+    output: true
+    permalink: /:collection/:path/
