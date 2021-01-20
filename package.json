@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/arobillard/portfolio-2020#readme",
   "dependencies": {
-    "gsap": "^3.3.4"
+    "gsap": "^3.6.0"
   }
 }
